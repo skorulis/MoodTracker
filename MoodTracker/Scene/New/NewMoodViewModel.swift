@@ -11,6 +11,7 @@ final class NewMoodViewModel: ObservableObject {
     @Published var emotions: Set<Emotion> = []
     @Published var note: String = ""
     @Published var action: String = ""
+    @Published var physical: String = ""
     
     init(store: CoreDataStore) {
         self.store = store
@@ -42,10 +43,14 @@ extension NewMoodViewModel {
         if !action.isEmpty {
             entry.action = action
         }
+        if !physical.isEmpty {
+            entry.physical = physical
+        }
         
         if !emotions.isEmpty {
             entry.emotions = Array(emotions)
         }
+        
         
         try! store.mainContext.save()
     }

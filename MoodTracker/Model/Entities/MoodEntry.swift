@@ -12,12 +12,14 @@ public class MoodEntry: NSManagedObject, Identifiable {
     
     @NSManaged public var date: Date
     @NSManaged public var moodLevel: Double
+    @NSManaged public var progress: Double
     
+    @NSManaged public var emotionData: Data?
     @NSManaged public var action: String?
     @NSManaged public var criticism: String?
-    @NSManaged public var emotionData: Data?
     @NSManaged public var note: String?
-    @NSManaged public var progress: Double
+    @NSManaged public var physical: String?
+    
     
     var emotions: [Emotion]? {
         get {

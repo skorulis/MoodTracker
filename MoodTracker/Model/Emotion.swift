@@ -14,7 +14,7 @@ enum Emotion: String, CaseIterable, Codable, Identifiable {
     
     var emoji: String {
         switch self {
-        case .lazy: return "😫"
+        case .lazy: return "🥱"
         case .tired: return "😴"
         case .happy: return "😊"
         case .energised: return "⚡"

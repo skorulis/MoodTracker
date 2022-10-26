@@ -27,7 +27,12 @@ extension NewMoodView: View {
     
     private var fields: some View {
         VStack {
-            Text("Mood")
+            HStack {
+                Text("Mood")
+                MoodIndicator(value: viewModel.moodLevel)
+                    .frame(width: 80, height: 80)
+            }
+            
             Slider(value: $viewModel.moodLevel)
             Text("Progress")
             Slider(value: $viewModel.progress)
@@ -39,6 +44,9 @@ extension NewMoodView: View {
             TextField("Action", text: $viewModel.action)
                 .textFieldStyle(.roundedBorder)
             
+            TextField("Physical", text: $viewModel.physical)
+                .textFieldStyle(.roundedBorder)
+            
             Button(action: save) {
                 Text("Save")
             }
@@ -48,7 +56,7 @@ extension NewMoodView: View {
     
     private var emotionSelector: some View {
         LazyVGrid(columns: [GridItem(.adaptive(minimum: 50))],
-                  spacing: 4
+                  spacing: 8
         ) {
             ForEach(Emotion.allCases) { emotion in
                 emojiButton(emotion)
@@ -61,6 +69,9 @@ extension NewMoodView: View {
             VStack {
                 Text(emotion.emoji)
                     .font(.largeTitle)
+                
+                Text(emotion.rawValue)
+                    .fixedSize()
             }
             .padding(6)
                 

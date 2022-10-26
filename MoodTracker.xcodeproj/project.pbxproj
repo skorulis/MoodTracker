@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA32B56B2907C7DE00BD7836 /* MoodIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32B56A2907C7DE00BD7836 /* MoodIndicator.swift */; };
 		FA5200EE2906652900FEA5C2 /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5200ED2906652900FEA5C2 /* Emotion.swift */; };
 		FA5200F02906821F00FEA5C2 /* MoodHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5200EF2906821F00FEA5C2 /* MoodHistoryCell.swift */; };
 		FA7FC76D2906359100517157 /* MoodTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FC7652906359100517157 /* MoodTrackerApp.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA32B56A2907C7DE00BD7836 /* MoodIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodIndicator.swift; sourceTree = "<group>"; };
 		FA5200ED2906652900FEA5C2 /* Emotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emotion.swift; sourceTree = "<group>"; };
 		FA5200EF2906821F00FEA5C2 /* MoodHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodHistoryCell.swift; sourceTree = "<group>"; };
 		FA7FC7522906331900517157 /* MoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA32B5692907C75C00BD7836 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FA32B56A2907C7DE00BD7836 /* MoodIndicator.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		FA7FC7492906331900517157 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +90,7 @@
 		FA7FC7542906331900517157 /* MoodTracker */ = {
 			isa = PBXGroup;
 			children = (
+				FA32B5692907C75C00BD7836 /* Components */,
 				FA7FC7672906359100517157 /* Model */,
 				FA7FC7682906359100517157 /* Resource */,
 				FA7FC7632906359100517157 /* Scene */,
@@ -275,6 +286,7 @@
 				FA7FC78D29064EF200517157 /* NewMoodView.swift in Sources */,
 				FA7FC785290647C800517157 /* CoreDataStore.swift in Sources */,
 				FA7FC76E2906359100517157 /* ContentView.swift in Sources */,
+				FA32B56B2907C7DE00BD7836 /* MoodIndicator.swift in Sources */,
 				FA7FC78B29064BE400517157 /* MoodHistoryViewModel.swift in Sources */,
 				FA7FC77C2906366B00517157 /* IOC.swift in Sources */,
 				FA7FC782290643B700517157 /* MoodEntry.swift in Sources */,
