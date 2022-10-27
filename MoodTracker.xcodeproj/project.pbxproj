@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FA32B56B2907C7DE00BD7836 /* MoodIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32B56A2907C7DE00BD7836 /* MoodIndicator.swift */; };
+		FA32B56E29090A1800BD7836 /* StarRatingViewSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = FA32B56D29090A1800BD7836 /* StarRatingViewSwiftUI */; };
 		FA5200EE2906652900FEA5C2 /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5200ED2906652900FEA5C2 /* Emotion.swift */; };
 		FA5200F02906821F00FEA5C2 /* MoodHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5200EF2906821F00FEA5C2 /* MoodHistoryCell.swift */; };
 		FA7FC76D2906359100517157 /* MoodTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FC7652906359100517157 /* MoodTrackerApp.swift */; };
@@ -56,6 +57,7 @@
 			files = (
 				FA7FC779290635C100517157 /* ASSwiftUI in Frameworks */,
 				FA7FC777290635BF00517157 /* ASKCore in Frameworks */,
+				FA32B56E29090A1800BD7836 /* StarRatingViewSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +227,7 @@
 			packageProductDependencies = (
 				FA7FC776290635BF00517157 /* ASKCore */,
 				FA7FC778290635C100517157 /* ASSwiftUI */,
+				FA32B56D29090A1800BD7836 /* StarRatingViewSwiftUI */,
 			);
 			productName = MoodTracker;
 			productReference = FA7FC7522906331900517157 /* MoodTracker.app */;
@@ -254,6 +257,9 @@
 				Base,
 			);
 			mainGroup = FA7FC7492906331900517157;
+			packageReferences = (
+				FA32B56C29090A1700BD7836 /* XCRemoteSwiftPackageReference "StarRatingViewSwiftUI" */,
+			);
 			productRefGroup = FA7FC7532906331900517157 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -496,7 +502,23 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		FA32B56C29090A1700BD7836 /* XCRemoteSwiftPackageReference "StarRatingViewSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:magickworx/StarRatingViewSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		FA32B56D29090A1800BD7836 /* StarRatingViewSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA32B56C29090A1700BD7836 /* XCRemoteSwiftPackageReference "StarRatingViewSwiftUI" */;
+			productName = StarRatingViewSwiftUI;
+		};
 		FA7FC776290635BF00517157 /* ASKCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ASKCore;

@@ -7,7 +7,7 @@ final class NewMoodViewModel: ObservableObject {
     private let store: CoreDataStore
     
     @Published var moodLevel: Double = 0.5
-    @Published var progress: Double = 0
+    @Published var progress: Float = 0
     @Published var emotions: Set<Emotion> = []
     @Published var note: String = ""
     @Published var action: String = ""
@@ -35,7 +35,7 @@ extension NewMoodViewModel {
         let entry = MoodEntry(context: store.mainContext)
         entry.date = Date()
         entry.moodLevel = moodLevel
-        entry.progress = progress
+        entry.progress = Double(progress / 5)
         
         if !note.isEmpty {
             entry.note = note

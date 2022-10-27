@@ -11,6 +11,7 @@ enum Emotion: String, CaseIterable, Codable, Identifiable {
     case sad
     case angry
     case frustrated
+    case anxious
     
     var emoji: String {
         switch self {
@@ -21,6 +22,7 @@ enum Emotion: String, CaseIterable, Codable, Identifiable {
         case .sad:  return "😔"
         case .angry: return "😡"
         case .frustrated: return "😠"
+        case .anxious: return "😬"
         }
     }
     

@@ -3,6 +3,7 @@
 import Foundation
 import SwiftUI
 import ASSwiftUI
+import StarRatingViewSwiftUI
 
 // MARK: - Memory footprint
 
@@ -35,7 +36,8 @@ extension NewMoodView: View {
             
             Slider(value: $viewModel.moodLevel)
             Text("Progress")
-            Slider(value: $viewModel.progress)
+            StarRatingView(rating: $viewModel.progress, maxRating: 5)
+                .frame(height: 40)
             
             emotionSelector
             TextField("Note", text: $viewModel.note)

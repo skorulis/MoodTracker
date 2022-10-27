@@ -1,6 +1,7 @@
 //Created by Alexander Skorulis on 24/10/2022.
 
 import Foundation
+import StarRatingViewSwiftUI
 import SwiftUI
 
 // MARK: - Memory footprint
@@ -30,7 +31,8 @@ extension MoodHistoryCell: View {
             
             
             if entry.progress > 0 {
-                Text("Progress: \(entry.progress)")
+                StarRatingView(rating: Float(entry.progress * 5), maxRating: 5)
+                    .frame(height: 40)
             }
             if let text = entry.emojiString {
                 Text("Emotions: \(text)")
