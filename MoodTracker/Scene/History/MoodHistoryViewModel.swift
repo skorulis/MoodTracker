@@ -1,10 +1,9 @@
 //Created by Alexander Skorulis on 24/10/2022.
 
+import ASKCore
 import Foundation
 
-final class MoodHistoryViewModel: ObservableObject {
-    
-    @Published var showingNew: Bool = false
+final class MoodHistoryViewModel: CoordinatedViewModel, ObservableObject {
     
 }
 
@@ -13,7 +12,7 @@ final class MoodHistoryViewModel: ObservableObject {
 extension MoodHistoryViewModel {
     
     func addEntry() {
-        showingNew = true
+        coordinator.present(MoodPath.new, style: .sheet)
     }
     
 }

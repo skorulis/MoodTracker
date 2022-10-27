@@ -19,9 +19,6 @@ extension MoodHistoryView: View {
     
     var body: some View {
         content
-            .sheet(isPresented: $viewModel.showingNew) {
-                NewMoodView(viewModel: factory.resolve())
-            }
     }
     
     private var content: some View {

@@ -11,6 +11,7 @@
 		FA32B56E29090A1800BD7836 /* StarRatingViewSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = FA32B56D29090A1800BD7836 /* StarRatingViewSwiftUI */; };
 		FA5200EE2906652900FEA5C2 /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5200ED2906652900FEA5C2 /* Emotion.swift */; };
 		FA5200F02906821F00FEA5C2 /* MoodHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5200EF2906821F00FEA5C2 /* MoodHistoryCell.swift */; };
+		FA581D56290A80A900BABB51 /* MoodPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA581D55290A80A900BABB51 /* MoodPath.swift */; };
 		FA7FC76D2906359100517157 /* MoodTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FC7652906359100517157 /* MoodTrackerApp.swift */; };
 		FA7FC76E2906359100517157 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FC7662906359100517157 /* ContentView.swift */; };
 		FA7FC76F2906359100517157 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7FC7692906359100517157 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		FA32B56A2907C7DE00BD7836 /* MoodIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodIndicator.swift; sourceTree = "<group>"; };
 		FA5200ED2906652900FEA5C2 /* Emotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emotion.swift; sourceTree = "<group>"; };
 		FA5200EF2906821F00FEA5C2 /* MoodHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodHistoryCell.swift; sourceTree = "<group>"; };
+		FA581D55290A80A900BABB51 /* MoodPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodPath.swift; sourceTree = "<group>"; };
 		FA7FC7522906331900517157 /* MoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7FC7652906359100517157 /* MoodTrackerApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodTrackerApp.swift; sourceTree = "<group>"; };
 		FA7FC7662906359100517157 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		FA581D54290A804900BABB51 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FA581D55290A80A900BABB51 /* MoodPath.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		FA7FC7492906331900517157 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +102,7 @@
 		FA7FC7542906331900517157 /* MoodTracker */ = {
 			isa = PBXGroup;
 			children = (
+				FA581D54290A804900BABB51 /* Coordinator */,
 				FA32B5692907C75C00BD7836 /* Components */,
 				FA7FC7672906359100517157 /* Model */,
 				FA7FC7682906359100517157 /* Resource */,
@@ -295,6 +306,7 @@
 				FA32B56B2907C7DE00BD7836 /* MoodIndicator.swift in Sources */,
 				FA7FC78B29064BE400517157 /* MoodHistoryViewModel.swift in Sources */,
 				FA7FC77C2906366B00517157 /* IOC.swift in Sources */,
+				FA581D56290A80A900BABB51 /* MoodPath.swift in Sources */,
 				FA7FC782290643B700517157 /* MoodEntry.swift in Sources */,
 				FA7FC76D2906359100517157 /* MoodTrackerApp.swift in Sources */,
 				FA7FC77F29063A2F00517157 /* Model.xcdatamodeld in Sources */,
