@@ -16,12 +16,15 @@ public final class IOC: IOCService {
     }
     
     private func registerServices() {
-        
+        container.autoregister(PErrorService.self, initializer: ErrorService.init)
+            .inObjectScope(.container)
+        container.autoregister(ErrorPresentationManager.self,
+                               initializer: ErrorPresentationManager.init)
     }
     
     private func registerViewModels() {
         container.autoregister(MoodHistoryViewModel.self, initializer: MoodHistoryViewModel.init)
-        container.autoregister(NewMoodViewModel.self, initializer: NewMoodViewModel.init)
+        container.autoregister(NewMoodViewModel.self, argument: NewMoodViewModel.Argument.self, initializer: NewMoodViewModel.init)
     }
     
     private func registerStores() {

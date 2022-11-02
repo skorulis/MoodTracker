@@ -7,6 +7,11 @@ import ASKCore
 struct MoodTrackerApp: App {
     
     private let ioc = IOC(purpose: .normal)
+    private let errorPresenter: ErrorPresentationManager
+    
+    init() {
+        self.errorPresenter = ioc.resolve()
+    }
     
     var body: some Scene {
         WindowGroup {

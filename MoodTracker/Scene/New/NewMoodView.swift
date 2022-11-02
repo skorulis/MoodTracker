@@ -40,6 +40,21 @@ extension NewMoodView: View {
                 .frame(height: 40)
             
             emotionSelector
+            textFields
+            
+            DatePicker("Time", selection: $viewModel.date)
+            
+            Button(action: save) {
+                Text("Save")
+            }
+            Spacer()
+                .frame(height: 20)
+        }
+        .padding(.horizontal, 16)
+    }
+    
+    private var textFields: some View {
+        VStack {
             TextField("Note", text: $viewModel.note)
                 .textFieldStyle(.roundedBorder)
             
@@ -48,12 +63,7 @@ extension NewMoodView: View {
             
             TextField("Physical", text: $viewModel.physical)
                 .textFieldStyle(.roundedBorder)
-            
-            Button(action: save) {
-                Text("Save")
-            }
         }
-        .padding(.horizontal, 16)
     }
     
     private var emotionSelector: some View {

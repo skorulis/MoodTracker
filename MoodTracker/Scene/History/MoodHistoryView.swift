@@ -26,7 +26,10 @@ extension MoodHistoryView: View {
             nav
             List {
                 ForEach(history) { moodEntry in
-                    MoodHistoryCell(entry: moodEntry)
+                    Button(action: { viewModel.select(moodEntry) }) {
+                        MoodHistoryCell(entry: moodEntry)
+                    }
+                    .id(moodEntry.revisionID)
                 }
             }
             .listStyle(.plain)

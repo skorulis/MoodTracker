@@ -9,5 +9,6 @@
         <attribute name="note" optional="YES" attributeType="String"/>
         <attribute name="physical" optional="YES" attributeType="String"/>
         <attribute name="progress" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="revisionID" attributeType="String" defaultValueString="0"/>
     </entity>
 </model>

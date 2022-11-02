@@ -15,4 +15,8 @@ extension MoodHistoryViewModel {
         coordinator.present(MoodPath.new, style: .sheet)
     }
     
+    func select(_ entry: MoodEntry) {
+        coordinator.push(MoodPath.edit(entry))
+    }
+    
 }

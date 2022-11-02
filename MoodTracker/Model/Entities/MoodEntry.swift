@@ -19,7 +19,7 @@ public class MoodEntry: NSManagedObject, Identifiable {
     @NSManaged public var criticism: String?
     @NSManaged public var note: String?
     @NSManaged public var physical: String?
-    
+    @NSManaged public var revisionID: String
     
     var emotions: [Emotion]? {
         get {
