@@ -2,7 +2,7 @@
 
 import Foundation
 import SwiftUI
-import ASSwiftUI
+import ASKDesignSystem
 
 // MARK: - Memory footprint
 
@@ -18,28 +18,21 @@ struct MoodHistoryView {
 extension MoodHistoryView: View {
     
     var body: some View {
-        content
+        ListTemplate(nav: nav, content: content)
     }
     
-    private var content: some View {
-        VStack {
-            nav
-            List {
-                ForEach(history) { moodEntry in
-                    Button(action: { viewModel.select(moodEntry) }) {
-                        MoodHistoryCell(entry: moodEntry)
-                    }
-                    .id(moodEntry.revisionID)
-                }
+    private func content() -> some View {
+        ForEach(history) { moodEntry in
+            Button(action: { viewModel.select(moodEntry) }) {
+                MoodHistoryCell(entry: moodEntry)
             }
-            .listStyle(.plain)
+            .id(moodEntry.revisionID)
         }
     }
     
-    private var nav: some View {
-        NavBar(left: EmptyView(),
-               mid: BarButtonItem.title("History"),
-               right: BarButtonItem.iconButton(Image(systemName: "plus.circle.fill"), viewModel.addEntry))
+    private func nav() -> some View {
+        NavBar(mid: .title("History"),
+               right: .iconButton(Image(systemName: "plus.circle.fill"), viewModel.addEntry))
     }
 }
 

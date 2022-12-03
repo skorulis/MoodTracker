@@ -2,7 +2,7 @@
 
 import Foundation
 import SwiftUI
-import ASSwiftUI
+import ASKDesignSystem
 
 // MARK: - Memory footprint
 

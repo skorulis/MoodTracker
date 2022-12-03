@@ -2,7 +2,7 @@
 
 import Foundation
 import SwiftUI
-import ASSwiftUI
+import ASKDesignSystem
 import StarRatingViewSwiftUI
 
 // MARK: - Memory footprint
@@ -18,12 +18,11 @@ struct NewMoodView {
 extension NewMoodView: View {
     
     var body: some View {
-        VStack(spacing: 0) {
-            nav
-            ScrollView {
-                fields
-            }
-        }
+        PageTemplate(nav: nav, content: content)
+    }
+    
+    private func content() -> some View {
+        fields
     }
     
     private var fields: some View {
@@ -91,10 +90,9 @@ extension NewMoodView: View {
         .border(viewModel.emotions.contains(emotion) ? Color.black : Color.clear)
     }
     
-    private var nav: some View {
-        NavBar(left: EmptyView(),
-               mid: BarButtonItem.title("New"),
-               right: BarButtonItem.close(close))
+    private func nav() -> some View {
+        NavBar(mid: .title("New"),
+               right: .close(close))
     }
     
     func save() {

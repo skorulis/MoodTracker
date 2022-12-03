@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FA32B56B2907C7DE00BD7836 /* MoodIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32B56A2907C7DE00BD7836 /* MoodIndicator.swift */; };
 		FA32B56E29090A1800BD7836 /* StarRatingViewSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = FA32B56D29090A1800BD7836 /* StarRatingViewSwiftUI */; };
+		FA42CB20293C065300031CF0 /* ASKDesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = FA42CB1F293C065300031CF0 /* ASKDesignSystem */; };
 		FA5200EE2906652900FEA5C2 /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5200ED2906652900FEA5C2 /* Emotion.swift */; };
 		FA5200F02906821F00FEA5C2 /* MoodHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5200EF2906821F00FEA5C2 /* MoodHistoryCell.swift */; };
 		FA581D56290A80A900BABB51 /* MoodPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA581D55290A80A900BABB51 /* MoodPath.swift */; };
@@ -17,9 +18,7 @@
 		FA7FC76F2906359100517157 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7FC7692906359100517157 /* Assets.xcassets */; };
 		FA7FC7702906359100517157 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7FC76B2906359100517157 /* Preview Assets.xcassets */; };
 		FA7FC7742906359800517157 /* ASKCore in Resources */ = {isa = PBXBuildFile; fileRef = FA7FC7722906359800517157 /* ASKCore */; };
-		FA7FC7752906359800517157 /* ASSwiftUI in Resources */ = {isa = PBXBuildFile; fileRef = FA7FC7732906359800517157 /* ASSwiftUI */; };
 		FA7FC777290635BF00517157 /* ASKCore in Frameworks */ = {isa = PBXBuildFile; productRef = FA7FC776290635BF00517157 /* ASKCore */; };
-		FA7FC779290635C100517157 /* ASSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = FA7FC778290635C100517157 /* ASSwiftUI */; };
 		FA7FC77C2906366B00517157 /* IOC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FC77B2906366B00517157 /* IOC.swift */; };
 		FA7FC77F29063A2F00517157 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA7FC77D29063A2F00517157 /* Model.xcdatamodeld */; };
 		FA7FC782290643B700517157 /* MoodEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FC781290643B700517157 /* MoodEntry.swift */; };
@@ -32,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		FA32B56A2907C7DE00BD7836 /* MoodIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodIndicator.swift; sourceTree = "<group>"; };
+		FA42CB1E293C064400031CF0 /* ASKDesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ASKDesignSystem; sourceTree = "<group>"; };
 		FA5200ED2906652900FEA5C2 /* Emotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emotion.swift; sourceTree = "<group>"; };
 		FA5200EF2906821F00FEA5C2 /* MoodHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodHistoryCell.swift; sourceTree = "<group>"; };
 		FA581D55290A80A900BABB51 /* MoodPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodPath.swift; sourceTree = "<group>"; };
@@ -41,7 +41,6 @@
 		FA7FC7692906359100517157 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA7FC76B2906359100517157 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA7FC7722906359800517157 /* ASKCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ASKCore; sourceTree = "<group>"; };
-		FA7FC7732906359800517157 /* ASSwiftUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ASSwiftUI; sourceTree = "<group>"; };
 		FA7FC77B2906366B00517157 /* IOC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOC.swift; sourceTree = "<group>"; };
 		FA7FC77E29063A2F00517157 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		FA7FC781290643B700517157 /* MoodEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodEntry.swift; sourceTree = "<group>"; };
@@ -57,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA7FC779290635C100517157 /* ASSwiftUI in Frameworks */,
+				FA42CB20293C065300031CF0 /* ASKDesignSystem in Frameworks */,
 				FA7FC777290635BF00517157 /* ASKCore in Frameworks */,
 				FA32B56E29090A1800BD7836 /* StarRatingViewSwiftUI in Frameworks */,
 			);
@@ -170,8 +169,8 @@
 		FA7FC7712906359800517157 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA42CB1E293C064400031CF0 /* ASKDesignSystem */,
 				FA7FC7722906359800517157 /* ASKCore */,
-				FA7FC7732906359800517157 /* ASSwiftUI */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -237,8 +236,8 @@
 			name = MoodTracker;
 			packageProductDependencies = (
 				FA7FC776290635BF00517157 /* ASKCore */,
-				FA7FC778290635C100517157 /* ASSwiftUI */,
 				FA32B56D29090A1800BD7836 /* StarRatingViewSwiftUI */,
+				FA42CB1F293C065300031CF0 /* ASKDesignSystem */,
 			);
 			productName = MoodTracker;
 			productReference = FA7FC7522906331900517157 /* MoodTracker.app */;
@@ -285,7 +284,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA7FC7752906359800517157 /* ASSwiftUI in Resources */,
 				FA7FC7742906359800517157 /* ASKCore in Resources */,
 				FA7FC7702906359100517157 /* Preview Assets.xcassets in Resources */,
 				FA7FC76F2906359100517157 /* Assets.xcassets in Resources */,
@@ -531,13 +529,13 @@
 			package = FA32B56C29090A1700BD7836 /* XCRemoteSwiftPackageReference "StarRatingViewSwiftUI" */;
 			productName = StarRatingViewSwiftUI;
 		};
+		FA42CB1F293C065300031CF0 /* ASKDesignSystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ASKDesignSystem;
+		};
 		FA7FC776290635BF00517157 /* ASKCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ASKCore;
-		};
-		FA7FC778290635C100517157 /* ASSwiftUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = ASSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 
